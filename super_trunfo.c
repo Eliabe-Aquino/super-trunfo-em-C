@@ -8,10 +8,6 @@ int main()
     char estado, nome_cidade[30], codigo_carta[4];
     float area_km, pib;
 
-    // Segunda Carta
-    int populacao_2, pontos_turisticos_2;
-    char estado_2, nome_cidade_2[30], codigo_carta_2[4];
-    float area_km_2, pib_2;
 
     printf("Bem vindo ao SuperTrunfo de estado do brasil, vamos criar nossas cartas!? \n");
     printf("Digite uma letra de 'A' a 'H', representando um dos oito estados \n");
@@ -31,7 +27,11 @@ int main()
     printf("Digite o Produto Interno Bruto da cidade (PIB). \n");
     scanf("%f", &pib);
 
-    
+
+     // Segunda Carta
+    int populacao_2, pontos_turisticos_2;
+    char estado_2, nome_cidade_2[30], codigo_carta_2[4];
+    float area_km_2, pib_2;
 
     printf(" Digite uma letra de 'A' a 'H', representando um dos oito estados \n");
     scanf(" %c", &estado_2);
@@ -50,6 +50,8 @@ int main()
     printf("Digite o Produto Interno Bruto da cidade (PIB). \n");
     scanf("%f", &pib_2);
 
+    // Impressão das cartas
+    
     printf("\n--- Carta 1 ---\n");
     printf("Estado: %c\n", estado);
     printf("Código Carta: %s\n", codigo_carta);
