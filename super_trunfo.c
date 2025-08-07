@@ -10,7 +10,7 @@ int main()
 
     // Segunda Carta
     int populacao_2, pontos_turisticos_2;
-    char estado_2, nome_cidade_2[20], codigo_carta_2[4];
+    char estado_2, nome_cidade_2[30], codigo_carta_2[4];
     float area_km_2, pib_2;
 
     printf("Bem vindo ao SuperTrunfo de estado do brasil, vamos criar nossas cartas!? \n");
@@ -31,7 +31,26 @@ int main()
     printf("Digite o Produto Interno Bruto da cidade (PIB). \n");
     scanf("%f", &pib);
 
-     printf("\n--- Carta 1 ---\n");
+    
+
+    printf(" Digite uma letra de 'A' a 'H', representando um dos oito estados \n");
+    scanf(" %c", &estado_2);
+    printf("Digite o nome da cidade. \n");
+    getchar();
+    fgets(nome_cidade_2, 30, stdin);
+    nome_cidade_2[strcspn(nome_cidade_2, "\n")] = 0;
+    printf("Digite a letra do estado seguida de um número de 01 a 04 (ex: A01, B03) \n");
+    scanf(" %s", codigo_carta_2);
+    printf("Digite o número de habitantes da cidade. \n");
+    scanf("%d", &populacao_2);
+    printf("Digite a  área da cidade em quilômetros quadrados. \n");
+    scanf("%f", &area_km_2);
+    printf("Digite a quantidade de pontos turísticos na cidade. \n");
+    scanf("%d", &pontos_turisticos_2);
+    printf("Digite o Produto Interno Bruto da cidade (PIB). \n");
+    scanf("%f", &pib_2);
+
+    printf("\n--- Carta 1 ---\n");
     printf("Estado: %c\n", estado);
     printf("Código Carta: %s\n", codigo_carta);
     printf("Nome da Cidade: %s\n", nome_cidade);
@@ -39,6 +58,17 @@ int main()
     printf("Área: %.2f km²\n", area_km);
     printf("PIB: %.2f bilhões de reais\n", pib);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos);
+
+    printf("\n--- Carta 2 ---\n");
+    printf("Estado: %c\n", estado_2);
+    printf("Código Carta: %s\n", codigo_carta_2);
+    printf("Nome da Cidade: %s\n", nome_cidade_2);
+    printf("População: %d\n", populacao_2);
+    printf("Área: %.2f km²\n", area_km_2);
+    printf("PIB: %.2f bilhões de reais\n", pib_2);
+    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_2);
+
+    
 
     return 0;
 }
